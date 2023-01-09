@@ -1,6 +1,8 @@
 #!/bin/bash
+phatt=$(pwd)
 sudo su
-
+cd $phatt
+./WifiPumpkin3.sh
 apt update -y && apt upgrade -y
 
 dpkg --configure -a
