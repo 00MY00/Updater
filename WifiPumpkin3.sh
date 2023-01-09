@@ -28,6 +28,8 @@ wifipumpkin3
 # start
 
 ###############################
+# Page de connexion
+###############################
 # wifipumpkin3
 # set interface wlan0
 # set ssid Free Wifi
