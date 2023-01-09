@@ -11,7 +11,8 @@ apt install python3-pyqt5
 
 python3 -c "from PyQt5.QtCore import QSettings; print('done')"
 
-python3 setup.py install
+# python3 setup.py install
+./install.sh
 
 wifipumpkin3
 
