@@ -30,6 +30,7 @@ wifipumpkin3
 #######################################
 # Wifipumpkin3 multi AP deauth attack #
 #######################################
+# use wifi.wifideath
 # scan
 # add MAC address
 # targets 
