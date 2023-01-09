@@ -22,6 +22,11 @@ rm -f ./whidLoginProxy.pulp
 
 clear
 echo
+echo Entrez le nom du réseau Wi-Fi
+echo
+read -p ": " ssid
+clear
+echo
 echo choisiser le type de Wi-Fi
 echo
 echo [1] normal sens Proxy
@@ -33,7 +38,7 @@ if [ "$use" = "1" ];
 then
   echo # Creating regulard Wifi point >> NoProxy.pulp
   echo set interface wlan0 >> NoProxy.pulp
-  echo set ssid Free Wifi >> NoProxy.pulp
+  echo set ssid $ssid >> NoProxy.pulp
   echo set proxy noproxy >> NoProxy.pulp
   echo ignore pydns_server >> NoProxy.pulp
   echo start >> NoProxy.pulp
@@ -43,7 +48,7 @@ elif [ "$use" = "2" ];
 then
   echo # Creating Wifi point Whid web Login page  >> whidLoginProxy.pulp
   echo set interface wlan0 >> whidLoginProxy.pulp
-  echo set ssid Free Wifi >> whidLoginProxy.pulp
+  echo set ssid $ssid >> whidLoginProxy.pulp
   echo set proxy captiveflask >> whidLoginProxy.pulp
   echo ignore pydns_server >> whidLoginProxy.pulp
   echo start >> whidLoginProxy.pulp 
