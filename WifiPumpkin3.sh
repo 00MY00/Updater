@@ -27,8 +27,16 @@ wifipumpkin3
 # ignore pydns_server
 # start
 
-
-
+#######################################
+# Wifipumpkin3 multi AP deauth attack #
+#######################################
+# scan
+# add MAC address
+# targets 
+# add .
+# targets
+# show_scan
+# start
 
 
 
