@@ -27,9 +27,9 @@ echo
 echo [1] normal sens Proxy
 echo [2] Wi-Fi avec page de login
 echo
-read -p ": " user
+read -p ": " use
 
-if [ "$user" = "1" ]:
+if [ "$use" = "1" ];
 then
   echo # Creating regulard Wifi point >> NoProxy.pulp
   echo set interface wlan0 >> NoProxy.pulp
@@ -39,7 +39,7 @@ then
   echo start >> NoProxy.pulp
   wifipumpkin3 --pulp ./NoProxy.pulp
 
-elif [ "$user" = "2" ]:
+elif [ "$use" = "2" ];
 then
   echo # Creating Wifi point Whid web Login page  >> whidLoginProxy.pulp
   echo set interface wlan0 >> whidLoginProxy.pulp
