@@ -14,7 +14,7 @@ python3 -c "from PyQt5.QtCore import QSettings; print('done')"
 # python3 setup.py install
 ./install.sh
 
-apt install hostapd
+apt install hostapd -y
 
 wifipumpkin3
 
