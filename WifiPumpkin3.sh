@@ -27,6 +27,18 @@ wifipumpkin3
 # ignore pydns_server
 # start
 
+###############################
+# wifipumpkin3
+# set interface wlan0
+# set ssid Free Wifi
+# set proxy captiveflask
+# ignore pydns_server
+# start
+
+
+
+
+
 #######################################
 # Wifipumpkin3 multi AP deauth attack #
 #######################################
