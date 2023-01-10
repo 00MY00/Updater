@@ -27,6 +27,11 @@ echo
 read -p ": " ssid
 clear
 echo
+echo Entrez le nom de la carte reseau à utiliser pour émettre
+echo
+read -p ": " CartReseau
+clear
+echo
 echo choisiser le type de Wi-Fi
 echo
 echo [1] normal sens Proxy
@@ -37,7 +42,7 @@ read -p ": " use
 if [ "$use" = "1" ];
 then
   echo # Creating regulard Wifi point >> NoProxy.pulp
-  echo set interface wlan0 >> NoProxy.pulp
+  echo set interface $CartReseau >> NoProxy.pulp
   echo set ssid $ssid >> NoProxy.pulp
   echo set proxy noproxy >> NoProxy.pulp
   echo ignore pydns_server >> NoProxy.pulp
@@ -47,7 +52,7 @@ then
 elif [ "$use" = "2" ];
 then
   echo # Creating Wifi point Whid web Login page  >> whidLoginProxy.pulp
-  echo set interface wlan0 >> whidLoginProxy.pulp
+  echo set interface $CartReseau >> whidLoginProxy.pulp
   echo set ssid $ssid >> whidLoginProxy.pulp
   echo set proxy captiveflask >> whidLoginProxy.pulp
   echo ignore pydns_server >> whidLoginProxy.pulp
